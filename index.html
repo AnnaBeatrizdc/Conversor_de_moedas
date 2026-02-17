@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon-conversor-moeda.ico" type="image/x-icon">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Conversor de Moedas</title>
+</head>
+<body>
+    <header>
+        <h1>Conversor de Moedas</h1>
+        <button id="btn-alterar-modo">
+            <img src="img/mododark.png" alt="Icone do modo escuro" id="AlterarModo">
+        </button>
+    </header>
+    <main>
+        <section>
+            <img src="img/img-conversor-modo-claro.png" alt="imagem de conversão de moedas" id="img-conversor">
+        </section>
+        <form class="conversor">
+            <label for="convt-de">Converter de</label>   
+            <section>
+                <img src="img/escolher-bandeira.png" alt="Icone de escolher bandeira" class="icone-bandeira-de">
+                <select name="convt-de" id="convt-de">
+                    <option value="">Selecione...</option>
+                    <option value="USD">USD - Dólar</option>
+                    <option value="BRL">BRL - Real</option>
+                    <option value="EUR">EUR - Euro</option>
+                    <option value="GBP">GBP - Libra</option>
+                </select>
+            </section>
+            <label for="convt-para">Para</label>
+            <section>
+                <img src="img/escolher-bandeira.png" alt="Icone de escolher bandeira" class="icone-bandeira-para">
+                <select name="convt-para" id="convt-para">
+                    <option value="">Selecione...</option>
+                    <option value="USD">USD - Dólar</option>
+                    <option value="BRL">BRL - Real</option>
+                    <option value="EUR">EUR - Euro</option>
+                    <option value="GBP">GBP - Libra</option>
+                </select>
+            </section>
+            
+            <label for="valor">Valor</label>
+            <input type="number" name="valor" id="valor" placeholder="Digite o valor a ser convertido">
+            <div class="botoes">
+            <button id="btn-limpar">Limpar</button>
+            <button type="button" id="btn-converter">Converter</button>
+            </div>
+        </form>
+        
+    </main>
+    <section class="resultado">
+            <section>
+                <img src="img/escolher-bandeira.png" alt="Icone de escolher bandeira" class="bandeira-de">
+                <p id="valorInserido">Valor Inserido</p>
+            </section>
+            <section>
+                <img src="img/escolher-bandeira.png" alt="Icone de escolher bandeira" class="bandeira-para">
+                <p id="valorConvertido">Valor Convertido</p>
+            </section>
+    </section>
+
+    <footer>
+        <p>© 2026 Conversor de Moedas — Desenvolvido por Anna Beatriz</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
